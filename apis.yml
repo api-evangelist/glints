@@ -1,8 +1,25 @@
 aid: glints
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/glints.png
 name: Glints
-description: 'Glints is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Glints is a talent recruitment and career development platform headquartered in Singapore
+  and operating across Southeast Asia, including Indonesia, Vietnam, Malaysia, Taiwan and the Philippines.
+  Founded in 2013, it runs an online job marketplace connecting job seekers with employers, a curated
+  headhunting service (TalentHunt), and a cross-border managed-talent / remote-hiring offering that lets
+  companies build and employ distributed teams across the region. Glints also publishes career resources
+  and expert classes. It is one of the largest talent ecosystems in Southeast Asia and is backed by
+  investors including DCM Ventures, Monk''s Hill Ventures and PERSOL. This API Evangelist profile was
+  added as a portfolio-company lead; Glints exposes no public developer API at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/glints/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Recruitment
+- Talent
+- Jobs
+- Human Resources
+- Careers
+- Hiring
+- Southeast Asia
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/glints-domain-security.yml
 - type: Website
   url: https://glints.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
